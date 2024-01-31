@@ -1,15 +1,20 @@
 import cv2
 
-# Load pre-trained face detection and recognition models
+# Load pre-trained face detection model
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-recognizer = cv2.face.LBPHFaceRecognizer_create()
-recognizer.read('trained_model.yml')  # Load the trained model
 
 # Load the dataset with labels
 labels = {"person1": 1, "person2": 2}  # Map names to IDs (change according to your dataset)
 
 # Initialize the webcam
 camera = cv2.VideoCapture(0)
+
+# Initialize LBPH face recognizer
+recognizer = cv2.face.LBPHFaceRecognizer_create()
+
+# Load the trained model
+print('File path:', 'trained_model.yml')
+recognizer.read('trained_model.yml')
 
 while True:
     ret, frame = camera.read()

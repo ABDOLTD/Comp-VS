@@ -1,7 +1,7 @@
 # how to create background Substraction
 
 
-
+"""
 import cv2 as cv
 
 
@@ -23,7 +23,7 @@ while True:
 
 cv.destroyAllWindows()
 video.release()
-
+"""
 
 
 # how to output the frame of your images
@@ -77,3 +77,11 @@ import numpy as np
 import imutlis
 import easyocr
 """
+
+# Face Detection application
+
+import cv2 as cv
+import numpy as np 
+
+
+image = cv.imread()

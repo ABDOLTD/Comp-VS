@@ -1,7 +1,7 @@
 # how to create background Substraction
 
 
-"""
+
 import cv2 as cv
 
 
@@ -23,7 +23,7 @@ while True:
 
 cv.destroyAllWindows()
 video.release()
-"""
+
 
 
 # how to output the frame of your images
@@ -45,6 +45,8 @@ camera.release()
 cv.destroyAllWindows()
 """
 
+# edge detection
+"""
 import cv2 as cv
 import numpy as np
 
@@ -67,3 +69,11 @@ while True:
 
 camera.release()
 cv.destroyAllWindows()
+"""
+"""
+import cv2 as cv
+import matplotlip import pyplot as plt
+import numpy as np
+import imutlis
+import easyocr
+"""
